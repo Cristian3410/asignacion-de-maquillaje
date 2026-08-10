@@ -1,0 +1,14 @@
+@font-face{
+    font-family: Poppins;
+    src: url("./fonts/Poppins-Regular.ttf");
+}
+
+
+/* index.css o App.css */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Esto elimina por completo la barra inferior indeseada */
+  margin: 0;
+  padding: 0;
+}
+

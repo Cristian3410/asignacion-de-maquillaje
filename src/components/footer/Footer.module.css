@@ -1,0 +1,169 @@
+.footerContainer {
+  width: 100%;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 4rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+/* Franja Rosa de Redes Sociales */
+.socialBar {
+  background: linear-gradient(135deg, #fbcfe8 0%, #f472b6 100%);
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.iconCircle {
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #db2777;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+}
+
+.iconCircle:hover {
+  transform: translateY(-4px);
+  background-color: #db2777;
+  color: #ffffff;
+}
+
+/* Contenido Principal de Columnas */
+.footerContent {
+  max-width: 85rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
+  text-align: center;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.columnTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+.columnTitle::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #db2777;
+  margin: 0.5rem auto 0 auto;
+  border-radius: 2px;
+}
+
+.footerText {
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+  word-break: break-all;
+}
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 0.5rem;
+}
+
+.footerLinks a {
+  font-size: 0.9rem;
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footerLinks a:hover {
+  color: #db2777;
+}
+
+/* Métodos de Pago Bonitos */
+.paymentMethods {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.payBadge {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+}
+
+/* Franja Inferior */
+.bottomBar {
+  background-color: #fbcfe8;
+  padding: 1.25rem 1rem;
+  text-align: center;
+}
+
+.copyrightText {
+  font-size: 0.8rem;
+  color: #831843;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.legalLink {
+  color: #831843;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.legalLink:hover {
+  color: #500724;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  .footerContent {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  
+  .iconCircle {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .copyrightText {
+    font-size: 0.75rem;
+  }
+}

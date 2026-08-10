@@ -1,0 +1,32 @@
+.bannerContainer {
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.bannerImageDesktop {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.bannerImageDesktop{
+  width: 100%;
+}
+
+.bannerImageMobile {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .bannerImageDesktop {
+    display: none;
+  }
+  .bannerImageMobile {
+    display: block;
+  }
+}

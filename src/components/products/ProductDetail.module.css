@@ -1,0 +1,228 @@
+.detailContainer {
+  width: 100%;
+  max-width: 75rem;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  color: #db2777;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.2s;
+}
+
+.backButton:hover {
+  opacity: 0.8;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f3f4f6;
+  align-items: center;
+}
+
+/* Imagen y Badge */
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #fff1f2;
+  border: 1px solid #fbcfe8;
+}
+
+.offerBadge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #f43f5e;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  letter-spacing: 0.05em;
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(244, 63, 94, 0.3);
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fdf2f8 0%, #ffe4e6 100%);
+}
+
+.brandTag {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #db2777;
+  letter-spacing: 0.05em;
+}
+
+/* Información del producto */
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.categorySub {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.productTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.oldPrice {
+  font-size: 1.2rem;
+  color: #9ca3af;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.currentPrice {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #db2777;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Controles de cantidad y botones */
+.actionsContainer {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.quantitySelector {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background-color: #f9fafb;
+  overflow: hidden;
+}
+
+.qtyBtn {
+  background: none;
+  border: none;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.qtyBtn:hover {
+  background-color: #e5e7eb;
+}
+
+.qtyNumber {
+  padding: 0 0.75rem;
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 0.95rem;
+}
+
+.addCartBtn {
+  flex: 1;
+  background-color: #db2777;
+  color: #ffffff;
+  border: none;
+  padding: 0.85rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 15px rgba(219, 39, 119, 0.2);
+}
+
+.addCartBtn:hover {
+  background-color: #be185d;
+  transform: translateY(-2px);
+}
+
+.addedSuccess {
+  background-color: #059669 !important;
+  box-shadow: 0 4px 15px rgba(5, 150, 105, 0.2);
+}
+
+.viewCartBtn {
+  width: 100%;
+  background-color: #ffffff;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.viewCartBtn:hover {
+  border-color: #db2777;
+  color: #db2777;
+  background-color: #fff1f2;
+}
+
+/* Responsividad para móviles y tablets */
+@media (max-width: 900px) {
+  .productGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .productTitle {
+    font-size: 1.5rem;
+  }
+
+  .imagePlaceholder {
+    height: 280px;
+  }
+}

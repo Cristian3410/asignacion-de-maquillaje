@@ -1,0 +1,205 @@
+
+.header {
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif; /* Asegura una tipografía moderna */
+}
+
+
+
+
+.topBar {
+  background: linear-gradient(135deg, #ffb6c1, #ff8da1);
+  color: #ffffff;
+  font-size: 0.8rem;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.topBarText {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cartContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  transition: background 0.2s ease;
+}
+
+.cartContainer:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Contenedor principal */
+.mainNavContainer {
+  max-width: 85rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.navContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #db2777;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+/* Enlaces de escritorio */
+.desktopMenu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktopMenu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #4b5563;
+  }
+}
+
+.desktopMenu a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  transition: color 0.2s;
+  padding: 0.25rem 0;
+}
+
+/* Línea animada sutil al pasar el mouse */
+.desktopMenu a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #db2777;
+  transition: width 0.3s ease;
+}
+
+.desktopMenu a:hover {
+  color: #db2777;
+}
+
+.desktopMenu a:hover::after {
+  width: 100%;
+}
+
+.activeLink {
+  color: #db2777;
+}
+
+/* Acciones (Buscador y Menú Hamburguesa) */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.iconButton {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 50%;
+  color: #4b5563;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.iconButton:hover {
+  background: #fdf2f8;
+  color: #db2777;
+  border-color: #fbcfe8;
+  transform: translateY(-1px);
+}
+
+.menuButton {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .menuButton {
+    display: none;
+  }
+}
+
+/* Menú móvil desplegable moderno */
+.mobileMenu {
+  background-color: #ffffff;
+  border-top: 1px solid #f3f4f6;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.08);
+  animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobileMenu a {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #374151;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.mobileMenu a:hover {
+  background-color: #fdf2f8;
+  color: #db2777;
+  padding-left: 1.25rem;
+}
+
+
+body{
+  margin: 0;
+  padding: auto;
+}
