@@ -1,0 +1,170 @@
+.showcaseSection {
+  width: 100%;
+  max-width: 80rem;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.showcaseContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Contenedor del Video / Reel */
+.videoWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.videoPlaceholder {
+  width: 100%;
+  max-width: 400px;
+  height: 420px;
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(219, 39, 119, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #f472b6;
+}
+
+.playOverlay {
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.playOverlay:hover {
+  transform: scale(1.05);
+}
+
+.playIcon {
+  color: #db2777;
+  font-size: 1.25rem;
+  margin-left: 3px;
+}
+
+.videoCaption {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #831843;
+}
+
+/* Tarjeta del Producto Destacado */
+.productCardBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.innerCard {
+  width: 100%;
+  max-width: 420px;
+  background: linear-gradient(135deg, #f9a8d4 0%, #f472b6 100%);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 15px 30px -10px rgba(219, 39, 119, 0.25);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.productImageContainer {
+  width: 100%;
+  height: 220px;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.categoryBadge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fb7185;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.productTitle {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.productPrice {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.addButton {
+  width: 100%;
+  background-color: #ffffff;
+  color: #db2777;
+  border: none;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: 800;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  letter-spacing: 0.05em;
+}
+
+.addButton:hover {
+  background-color: #fdf2f8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.addButton:active {
+  transform: scale(0.98);
+}
+
+/* Responsividad para Tablets y Celulares */
+@media (max-width: 768px) {
+  .showcaseContainer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .videoPlaceholder, .innerCard {
+    max-width: 100%;
+  }
+}

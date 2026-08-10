@@ -5,6 +5,7 @@ import ProductDetail from '../products/ProductDetail';
 import Newsletter from '../Newsletter/Newsletter';
 import Footer from '../footer/FooterPage';
 import styles from './HomePage.module.css';
+import FeaturedVideoSection from '../FeautersVideo/FeautersVideo.jsx';
 
 const ALL_PRODUCTS = [
   { id: 1, name: 'Crema Hidratante Facial Glow', category: 'cremas', brand: 'Trendy', price: 45000, oldPrice: 50000, description: 'Hidratación profunda con efecto luminoso instantáneo.', isBestSeller: true, badge: '¡Más Vendido!' },
@@ -85,7 +86,11 @@ const HomePage = () => {
           )}
         </div>
       </section>
-
+<FeaturedVideoSection 
+        onAddToCart={(product) => {
+          alert(`¡${product.name} agregado al carrito con éxito!`);
+        }} 
+      />
       <Newsletter />
       <Footer />
     </div>
