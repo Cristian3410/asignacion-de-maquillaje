@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './HomeBanner.module.css';
-import trendyBannerDesktop from '../../imgs/imgs1.png'; 
+import trendyBannerDesktop from '../../imgs/imgs2.png'; 
 import trendyBannerMobile from '../../imgs/imgs2.png';   
 
 const HomeBanner = () => {
