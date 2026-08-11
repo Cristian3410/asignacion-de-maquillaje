@@ -4,7 +4,7 @@ import { FaShoppingCart, FaSearch } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import styles from "../NavBar/Navbar.module.css";
 import { IoMdMenu } from "react-icons/io";
-import logoEmpresa from "../../imgs/logoEmpresa.png"
+import logoEmpresa from "../../public/logoEmpresa.png"
 
 
 function NavBar() {

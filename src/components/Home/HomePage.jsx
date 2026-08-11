@@ -6,14 +6,14 @@ import Newsletter from '../Newsletter/Newsletter';
 import Footer from '../footer/FooterPage';
 import styles from './HomePage.module.css';
 import FeaturedVideoSection from '../FeautersVideo/FeautersVideo.jsx';
-import cremaimg from "../../imgs/products/producto1.png";
-import product2 from "../../imgs/products/producto2.png";
-import product3 from "../../imgs/products/producto3.png";
-import product4 from "../../imgs/products/producto4.png";
-import product5 from "../../imgs/products/producto5.png";
-import product6 from "../../imgs/products/producto6.png";
-import product7 from "../../imgs/products/producto7.png";
-import product8 from "../../imgs/products/producto8.png";
+import cremaimg from "../../public/products/producto1.png";
+import product2 from "../../public/products/producto2.png";
+import product3 from "../../public/products/producto3.png";
+import product4 from "../../public/products/producto4.png";
+import product5 from "../../public/products/producto5.png";
+import product6 from "../../public/products/producto6.png";
+import product7 from "../../public/products/producto7.png";
+import product8 from "../../public/products/producto8.png";
 
 
 const ALL_PRODUCTS = [

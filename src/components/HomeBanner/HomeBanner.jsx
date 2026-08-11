@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import styles from './HomeBanner.module.css';
 
-// Importaciones de imágenes para Desktop
-import banner1Desktop from "../../imgs/imagenPrueba1.jpg";
-import banner2Desktop from "../../imgs/imagenPrueba2.jpg";
-import banner3Desktop from "../../imgs/imagenPrueba3.jpg";
 
-// Importaciones de imágenes para Móvil
-import banner1Mobile from "../../imgs/imagenPrueba1.jpg";
-import banner2Mobile from "../../imgs/imagenPrueba2.jpg";
-import banner3Mobile from "../../imgs/imagenPrueba3.jpg";
+import banner1Desktop from "../../public/imagenPrueba1.jpg";
+import banner2Desktop from "../../public/imagenPrueba2.jpg";
+import banner3Desktop from "../../public/imagenPrueba3.jpg";
+
+
+import banner1Mobile from "../../public/imagenPrueba1.jpg";
+import banner2Mobile from "../../public/imagenPrueba2.jpg";
+import banner3Mobile from "../../public/imagenPrueba3.jpg";
 
 const HomeBanner = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -4,10 +4,10 @@ import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { IoLogoTiktok } from "react-icons/io5";
-import visa from "../../imgs/visafinal.png"
-import cardMaster from "../../imgs/masterdcardfinal.png"
-import maestro from "../../imgs/masterfinal.png"
-import banco from "../../imgs/imagenFinalFinal.png"
+import visa from "../../public/visafinal.png"
+import cardMaster from "../../public/masterdcardfinal.png"
+import maestro from "../../public/masterfinal.png"
+import banco from "../../public/imagenFinalFinal.png"
 
 
 const Footer = () => {
