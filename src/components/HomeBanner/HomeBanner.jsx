@@ -1,21 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import styles from './HomeBanner.module.css';
 
-
-import banner1Desktop from "../../public/imagenPrueba1.jpg";
-import banner2Desktop from "../../public/imagenPrueba2.jpg";
-import banner3Desktop from "../../public/imagenPrueba3.jpg";
-
-
-import banner1Mobile from "../../public/imagenPrueba1.jpg";
-import banner2Mobile from "../../public/imagenPrueba2.jpg";
-import banner3Mobile from "../../public/imagenPrueba3.jpg";
-
 const HomeBanner = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const desktopImages = [banner1Desktop, banner2Desktop, banner3Desktop];
-  const mobileImages = [banner1Mobile, banner2Mobile, banner3Mobile];
+  const desktopImages = [
+    '../../public/imagenPrueba1.jpg',
+    '../../public/imagenPrueba2.jpg',
+    '../../public/imagenPrueba3.jpg'
+  ];
 
   // Efecto para cambiar de imagen automáticamente cada 4 segundos
   useEffect(() => {
