@@ -10,7 +10,7 @@ const HomeBanner = () => {
     '/imagenPrueba3.jpg'
   ];
 
-
+  // Efecto para cambiar de imagen automáticamente cada 4 segundos
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % desktopImages.length);
