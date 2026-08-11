@@ -6,7 +6,7 @@ const HomeBanner = () => {
 
   const desktopImages = [
     '/imagenPrueba1.jpg',
-    '/imagenPrueba2.jpg',
+    '/imagenprueba2.jpg',
     '/imagenPrueba3.jpg'
   ];
 
