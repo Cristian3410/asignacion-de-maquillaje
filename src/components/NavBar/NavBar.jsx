@@ -4,6 +4,7 @@ import { FaShoppingCart, FaSearch } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import styles from "../NavBar/Navbar.module.css";
 import { IoMdMenu } from "react-icons/io";
+import logoEmpresa from "../../imgs/logoEmpresa.png"
 
 
 function NavBar() {
@@ -13,20 +14,20 @@ function NavBar() {
 
     return (
         <header className={styles.header}>
-            {/* Barra superior */}
             <div className={styles.topBar}>
-                <span className={styles.topBarText}>✨ ¡ENVIOS A TODO COLOMBIA! ✨</span>
+                <span className={styles.topBarText}>¡ENVIOS A TODO COLOMBIA!</span>
                 <div className={styles.cartContainer}>
                     <FaShoppingCart />
                     <span>0 elementos</span>
                 </div>
             </div>  
 
-            {/* Contenedor principal de navegación */}
+           
             <div className={styles.mainNavContainer}>
                 <div className={styles.navContent}>
                     <Link to="/" className={styles.logo}>
-                        GLAMOUR
+                    <img src={logoEmpresa} className={styles.imgLogo}>
+                    </img>
                     </Link>
 
                     <nav className={styles.desktopMenu}>

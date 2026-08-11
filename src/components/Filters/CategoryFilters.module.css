@@ -1,11 +1,10 @@
-/* CategoryFilters.module.css */
 .filterSection {
   width: 100%;
-  max-width: 100%; /* Evita que crezca más allá de la pantalla */
-  box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+  max-width: 100%;
+  box-sizing: border-box;
   margin: 1.5rem auto;
   padding: 0 1rem;
-  overflow: hidden; /* Corta cualquier desbordamiento accidental */
+  overflow: hidden;
 }
 
 .filterHeader {
@@ -24,7 +23,7 @@
   margin: 0;
 }
 
-/* Contenedor con scroll interno independiente */
+/* Contenedor con scroll interno independiente para móviles */
 .filtersContainer {
   display: flex;
   gap: 0.75rem;

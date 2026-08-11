@@ -1,23 +1,32 @@
 import React from 'react';
 import styles from './Footer.module.css';
+import { FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
+import { IoLogoTiktok } from "react-icons/io5";
+import visa from "../../imgs/visafinal.png"
+import cardMaster from "../../imgs/masterdcardfinal.png"
+import maestro from "../../imgs/masterfinal.png"
+import banco from "../../imgs/imagenFinalFinal.png"
+
 
 const Footer = () => {
   return (
     <footer className={styles.footerContainer}>
-      {/* Franja Superior con Redes Sociales */}
+    
       <div className={styles.socialBar}>
         <div className={styles.socialIcons}>
           <a href="#whatsapp" className={styles.iconCircle} aria-label="WhatsApp">
-            <i className="fab fa-whatsapp"></i> 💬
+            <FaWhatsapp />
           </a>
           <a href="#instagram" className={styles.iconCircle} aria-label="Instagram">
-            <i className="fab fa-instagram"></i> 📸
+            <FaInstagram />
           </a>
           <a href="#facebook" className={styles.iconCircle} aria-label="Facebook">
-            <i className="fab fa-facebook-f"></i> 📘
+           <FaFacebookF />
           </a>
           <a href="#tiktok" className={styles.iconCircle} aria-label="TikTok">
-            <i className="fab fa-tiktok"></i> 🎵
+            <IoLogoTiktok />
           </a>
         </div>
       </div>
@@ -40,12 +49,12 @@ const Footer = () => {
 
         <div className={styles.footerColumn}>
           <h3 className={styles.columnTitle}>MÉTODOS DE PAGO</h3>
-          <div className={styles.paymentMethods}>
-            <span className={styles.payBadge}>VISA</span>
-            <span className={styles.payBadge}>Mastercard</span>
-            <span className={styles.payBadge}>Maestro</span>
-            <span className={styles.payBadge}>Bancontact</span>
-          </div>
+  <div className={styles.paymentMethods}>
+  <img src={visa} className={styles.paymentImg} alt="Visa" />
+  <img src={cardMaster} className={styles.paymentImg} alt="Mastercard" />
+  <img src={maestro} className={styles.paymentImg} alt="Maestro" />
+  <img src={banco} className={styles.bancoImg} alt="Bancontact" /> {/* <-- Clase especial aquí */}
+</div>
         </div>
       </div>
 

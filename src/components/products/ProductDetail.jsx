@@ -41,9 +41,19 @@ const ProductDetail = ({ product, onAddToCart, onBack }) => {
           {currentProduct.badge && (
             <span className={styles.offerBadge}>{currentProduct.badge}</span>
           )}
-          <div className={styles.imagePlaceholder}>
-            <span className={styles.brandTag}>{currentProduct.brand}</span>
-          </div>
+          
+          {/* Mostramos la imagen real si existe, de lo contrario muestra el placeholder con el texto */}
+          {currentProduct.image ? (
+            <img 
+              src={currentProduct.image} 
+              alt={currentProduct.name} 
+              className={styles.productImage} 
+            />
+          ) : (
+            <div className={styles.imagePlaceholder}>
+              <span className={styles.brandTag}>{currentProduct.brand}</span>
+            </div>
+          )}
         </div>
 
         {/* Columna de Información y Compra */}

@@ -1,32 +1,58 @@
 .bannerContainer {
   width: 100%;
+  max-width: 100%;
   position: relative;
   margin-bottom: 2rem;
-  overflow: hidden;
+  overflow: hidden; /* Oculta las imágenes que están fuera de la pantalla */
 }
 
-.bannerImageDesktop {
+.sliderWrapper {
+  display: flex;
   width: 100%;
-  height: auto;
+  /* Hace que el movimiento de cambio de imagen sea suave y profesional */
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); 
+}
+
+.bannerImage {
+  width: 100%;
+  flex: 0 0 100%; /* Obliga a que cada imagen ocupe exactamente el 100% del ancho */
+  height: auto;   /* Mantiene la proporción natural de la imagen para que no se deforme ni corte */
   display: block;
-  object-fit: cover;
+  object-fit: contain; 
 }
 
-.bannerImageDesktop{
-  width: 100%;
+/* Contenedor de los puntitos flotantes abajo */
+.dotsContainer {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
 }
 
-.bannerImageMobile {
-  display: none;
-  width: 100%;
-  height: auto;
+/* Estilo de cada punto */
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+/* Estilo del punto activo (el color rosa de tu marca) */
+.activeDot {
+  background-color: #db2777; /* Rosa de Glam Reebel */
+  width: 24px; /* Se estira elegantemente al activarse */
+  border-radius: 5px;
+}
+
+/* Responsividad para móviles */
 @media (max-width: 768px) {
-  .bannerImageDesktop {
-    display: none;
-  }
-  .bannerImageMobile {
-    display: block;
+  .dotsContainer {
+    bottom: 1rem;
   }
 }

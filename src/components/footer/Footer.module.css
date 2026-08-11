@@ -15,6 +15,26 @@
   align-items: center;
 }
 
+.visaImg{
+  width: 100px;
+}
+
+
+.paymentMethods {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* <-- Esto alinea todas las imágenes verticalmente al centro */
+}
+
+/* Una sola clase para todas las imágenes de pago para que tengan la misma altura */
+.paymentImg {
+  height: 32px; /* Puedes ajustar este valor si las quieres un poco más grandes o pequeñas */
+  width: auto;  /* Mantiene la proporción original de cada logo para que no se deformen */
+  object-fit: contain;
+}
+
 .socialIcons {
   display: flex;
   gap: 1.5rem;
@@ -149,6 +169,73 @@
 .legalLink:hover {
   color: #500724;
 }
+
+
+.masterImg{
+  width: 80px;
+  height: 50px;
+}
+
+.visaImg{
+  width: 80px;
+  height: 55px;
+}
+
+.cardImg{
+  width: 80px;
+  height: 50px;
+}
+
+.bancoImg{
+  width: 80px;
+  height: 90px
+
+}
+
+.paymentMethods {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tamaño estándar para Visa, Mastercard y Maestro */
+.paymentImg {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Tamaño especial solo para Bancontact (puedes subir o bajar este valor a tu gusto) */
+.bancoImg {
+  height: 44px; /* Aumentamos la altura para que se vea del mismo tamaño visual */
+  width: auto;
+  object-fit: contain;
+}
+
+.paymentMethods {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tamaño estándar para Visa, Mastercard y Maestro */
+.paymentImg {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Tamaño especial solo para Bancontact (puedes subir o bajar este valor a tu gusto) */
+.bancoImg {
+  height: 44px; /* Aumentamos la altura para que se vea del mismo tamaño visual */
+  width: auto;
+  object-fit: contain;
+}
+
 
 /* Responsividad para móviles */
 @media (max-width: 768px) {
