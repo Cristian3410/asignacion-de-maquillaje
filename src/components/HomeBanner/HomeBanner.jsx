@@ -5,12 +5,12 @@ const HomeBanner = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const desktopImages = [
-    '../../../public/imagenPrueba1.jpg',
-    '../../../public/imagenPrueba2.jpg',
-    '../../../public/imagenPrueba3.jpg'
+    '/imagenPrueba1.jpg',
+    '/imagenPrueba2.jpg',
+    '/imagenPrueba3.jpg'
   ];
 
-  // Efecto para cambiar de imagen automáticamente cada 4 segundos
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % desktopImages.length);
